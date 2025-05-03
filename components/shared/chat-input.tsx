@@ -13,7 +13,7 @@ import { EmojiPicker } from "@/components/shared/emoji-picker";
 
 interface ChatInputProps {
   apiUrl: string;
-  //@ts-ignore
+  //@ts-nocheck
   query: Record<string, any>;
   name: string;
   type: "conversation" | "channel";
