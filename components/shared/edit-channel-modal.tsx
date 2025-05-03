@@ -85,7 +85,7 @@ export function EditChannelModal() {
       form.reset();
       router.refresh();
       onClose();
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong", { id: toastId });
     }
   };

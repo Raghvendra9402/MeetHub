@@ -37,7 +37,7 @@ export function DeleteChannelModal() {
       onClose();
       router.refresh();
       router.push(`/servers/${server?.id}`);
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong");
     } finally {
       setLoading(false);

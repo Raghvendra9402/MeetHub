@@ -61,7 +61,7 @@ export function InitialModal() {
       form.reset();
       router.refresh();
       window.location.reload();
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong", { id: toastId });
     }
   };

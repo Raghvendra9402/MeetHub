@@ -4,6 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { io as ClientIo } from "socket.io-client";
 
 type SocketContextType = {
+  //@ts-ignore
   socket: any | null;
   isConnected: boolean;
 };
@@ -22,6 +23,7 @@ export const SocketProvider = ({ children }: { children: React.ReactNode }) => {
   const [isConnected, setIsConnected] = useState(false);
 
   useEffect(() => {
+    //@ts-ignore
     const socketInstance = new (ClientIo as any)(
       process.env.NEXT_PUBLIC_SITE_URL!,
       {

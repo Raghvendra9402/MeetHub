@@ -42,7 +42,7 @@ export function InviteModal() {
       );
       toast.success("Link generated");
       onOpen("invite", { server: response.data });
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong");
     } finally {
       setLoading(false);

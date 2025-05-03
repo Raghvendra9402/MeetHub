@@ -1,6 +1,6 @@
 import { currentProfile } from "@/lib/current-profile";
 import { prisma } from "@/lib/db";
-import { DirectMessage, Message } from "@prisma/client";
+import { DirectMessage } from "@prisma/client";
 import { NextResponse } from "next/server";
 
 const MESSAGE_BATCH_SIZE = 10;

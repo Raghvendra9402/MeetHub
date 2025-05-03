@@ -58,7 +58,6 @@ export function ChatItem({
   const params = useParams();
   const { onOpen } = useModal();
   const [isEditing, setIsEditing] = useState(false);
-  const [isDeleting, setIsDeleting] = useState(false);
   const fileType = fileUrl?.split(".").pop();
   const isAdmin = currentMember.role === MemberRole.ADMIN;
   const isModerator = currentMember.role === MemberRole.MODERATOR;
@@ -98,7 +97,7 @@ export function ChatItem({
     form.reset({
       content: content,
     });
-  }, [content]);
+  }, [form, content]);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
@@ -112,7 +111,7 @@ export function ChatItem({
       form.reset();
       setIsEditing(false);
       router.refresh();
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong!");
     }
   };

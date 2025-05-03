@@ -30,7 +30,7 @@ export function LeaveServerModal() {
       onClose();
       router.refresh();
       router.push("/");
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong");
     } finally {
       setLoading(false);

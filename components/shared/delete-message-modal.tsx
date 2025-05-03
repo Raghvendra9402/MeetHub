@@ -31,7 +31,7 @@ export function DeleteMessageModal() {
       await axios.delete(url);
       toast.success("message deleted");
       onClose();
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong");
     } finally {
       setLoading(false);
