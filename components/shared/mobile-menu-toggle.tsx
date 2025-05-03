@@ -5,9 +5,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Button } from "../ui/button";
-import { NavigationSidebar } from "./navigation-sidebar";
-import { ServerSidebar } from "./server-sidebar";
+import { Button } from "@/components/ui/button";
+import { NavigationSidebar } from "@/components/shared/navigation-sidebar";
+import { ServerSidebar } from "@/components/shared/server-sidebar";
 
 export function MobileMenuToggle({ serverId }: { serverId: string }) {
   return (

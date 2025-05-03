@@ -1,15 +1,22 @@
 "use client";
-import * as z from "zod";
+import { useModal } from "@/hooks/modal-store";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { ChannelType } from "@prisma/client";
+import axios from "axios";
+import { useParams, useRouter } from "next/navigation";
+import qs from "query-string";
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import * as z from "zod";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
 import {
   Form,
   FormControl,
@@ -17,24 +24,15 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import { FileUpload } from "./file-upload";
-import toast from "react-hot-toast";
-import axios from "axios";
-import { useParams, useRouter } from "next/navigation";
-import { useModal } from "@/hooks/modal-store";
-import { ChannelType } from "@prisma/client";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../ui/select";
-import qs from "query-string";
-import { useEffect } from "react";
+} from "@/components/ui/select";
 
 const formSchema = z.object({
   name: z

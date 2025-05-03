@@ -1,11 +1,10 @@
 "use client";
 import { useModal } from "@/hooks/modal-store";
 import axios from "axios";
-import { useRouter } from "next/navigation";
 import qs from "query-string";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -13,7 +12,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
 
 export function DeleteMessageModal() {
   const { isOpen, onClose, type, data } = useModal();

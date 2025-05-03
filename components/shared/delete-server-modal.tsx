@@ -1,7 +1,7 @@
 "use client";
 import { useModal } from "@/hooks/modal-store";
 import { useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -9,7 +9,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
+} from "@/components/ui/dialog";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useRouter } from "next/navigation";

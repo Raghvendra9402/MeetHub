@@ -1,8 +1,8 @@
-import { Hash, Menu } from "lucide-react";
+import { ChatVideoButton } from "@/components/shared/chat-video-button";
 import { MobileMenuToggle } from "@/components/shared/mobile-menu-toggle";
-import { UserAvatar } from "@/components/shared/user-avatar";
 import { SocketIndicator } from "@/components/shared/socket-indicator";
-import { ChatVideoButton } from "./chat-video-button";
+import { UserAvatar } from "@/components/shared/user-avatar";
+import { Hash } from "lucide-react";
 
 interface ChatHeaderProps {
   serverId: string;

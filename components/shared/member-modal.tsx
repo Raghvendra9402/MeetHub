@@ -7,9 +7,9 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
-import { ScrollArea } from "../ui/scroll-area";
-import { UserAvatar } from "./user-avatar";
+} from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { UserAvatar } from "@/components/shared/user-avatar";
 import {
   Check,
   Gavel,
@@ -31,7 +31,7 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import qs from "query-string";
 import { MemberRole } from "@prisma/client";
 import toast from "react-hot-toast";

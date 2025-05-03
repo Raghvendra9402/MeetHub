@@ -2,7 +2,7 @@
 
 import { Video, VideoOff } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ActionTooltip } from "./action-tooltip";
+import { ActionTooltip } from "@/components/shared/action-tooltip";
 import qs from "query-string";
 
 export function ChatVideoButton() {

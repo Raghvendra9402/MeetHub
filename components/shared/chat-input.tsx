@@ -1,15 +1,15 @@
 "use client";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-import { Form, FormControl, FormField, FormItem } from "../ui/form";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import qs from "query-string";
-import { Plus, Send, Smile } from "lucide-react";
-import toast from "react-hot-toast";
 import axios from "axios";
-import { EmojiPicker } from "./emoji-picker";
+import { Plus, Send } from "lucide-react";
+import qs from "query-string";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+import * as z from "zod";
+import { Button } from "@/components/ui/button";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { EmojiPicker } from "@/components/shared/emoji-picker";
 
 interface ChatInputProps {
   apiUrl: string;

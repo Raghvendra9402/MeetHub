@@ -1,11 +1,11 @@
 import { currentProfile } from "@/lib/current-profile";
 import { prisma } from "@/lib/db";
 import { redirect } from "next/navigation";
-import { NavigationAction } from "./navigation-action";
-import { Separator } from "../ui/separator";
-import { ScrollArea } from "../ui/scroll-area";
-import { NavigationItem } from "./navigation-item";
-import { ThemeToggleButton } from "./theme-toggle";
+import { NavigationAction } from "@/components/shared/navigation-action";
+import { Separator } from "@/components/ui/separator";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { NavigationItem } from "@/components/shared/navigation-item";
+import { ThemeToggleButton } from "@/components/shared/theme-toggle";
 import { UserButton } from "@clerk/nextjs";
 
 export async function NavigationSidebar() {

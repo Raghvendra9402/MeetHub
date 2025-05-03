@@ -1,7 +1,7 @@
 import { Member, MemberRole, Profile } from "@prisma/client";
-import { UserAvatar } from "./user-avatar";
+import { UserAvatar } from "@/components/shared/user-avatar";
 import { Edit, FileIcon, ShieldAlert, ShieldCheck, Trash } from "lucide-react";
-import { ActionTooltip } from "./action-tooltip";
+import { ActionTooltip } from "@/components/shared/action-tooltip";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -12,9 +12,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import qs from "query-string";
 import toast from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
-import { Form, FormControl, FormField, FormItem } from "../ui/form";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { useModal } from "@/hooks/modal-store";
 
 const formSchema = z.object({
